@@ -1,0 +1,101 @@
+body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slider {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.slider > div {
+    background-size: cover;
+}
+
+#block-main {
+    width: 500px;
+    height: 450px;
+    background-color: black;
+}
+
+.fade-in {
+    -webkit-animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+#block-left, #block-right {
+    width: 350px;
+    height: 400px;
+    background-color: gray;
+    margin: auto 0;
+}
+
+.header {
+    margin-left: 15px;
+}
+
+.buttons {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.buttons p:first-child {
+    margin-left: 0 !important;
+}
+
+.buttons p {
+    font-size: 1.5rem;
+    margin-left: 15px;
+}
+
+.buttons p:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+.favorites {
+    width: 100%;
+    overflow-y: scroll;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.favorites img {
+    margin: 0 5px;
+}
+
+.message {
+    position: absolute;
+    height: 150px;
+    top: 0;
+    left: 25%;
+    border-style: dotted;
+    background-color: #ffffff;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
